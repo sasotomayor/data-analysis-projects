@@ -2,7 +2,6 @@ from functions.team_information import get_team_basic_information, get_team_play
 
 from data.dataframes import *
 
-
 # Team's Analysis - KRC Genk
 
 #Columns
@@ -14,8 +13,7 @@ print(teams_df[teams_df.team_long_name == 'KRC Genk'].merge(team_attributes_df, 
 #
 #print(team_df[team_df.team_long_name == 'KRC Genk'].iloc[0]['team_api_id'])
 #print(matches_df[matches_df.home_team_api_id == teams_df[teams_df.team_long_name == 'KRC Genk'].iloc[0]['team_api_id']].iloc[0])
-#print(get_team_basic_information('KRC Genk'))
-print(get_team_players('KRC Genk'))
+print(get_team_basic_information('KRC Genk'))
 
 #print(team_attributes_df.columns.to_list())
 
